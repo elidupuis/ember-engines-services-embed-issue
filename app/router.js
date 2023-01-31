@@ -6,4 +6,8 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.mount('my-routeable-engine');
+  this.route('route-with-mounted-engine');
+  this.mount('my-routeless-engine');
+});
