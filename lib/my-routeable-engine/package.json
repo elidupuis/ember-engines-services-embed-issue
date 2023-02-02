@@ -6,6 +6,18 @@
   ],
   "dependencies": {
     "ember-cli-htmlbars": "*",
-    "ember-cli-babel": "*"
+    "ember-cli-babel": "*",
+    "my-routeless-engine": "file:../my-routeless-engine"
+  },
+  "devDependencies": {
+    "ember-engines": "*"
+  },
+  "peerDependencies": {
+    "ember-engines": "*"
+  },
+  "ember-addon": {
+    "paths": [
+      "../my-routeless-engine"
+    ]
   }
 }

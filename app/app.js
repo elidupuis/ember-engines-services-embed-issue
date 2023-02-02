@@ -11,12 +11,12 @@ export default class App extends Application {
   engines = {
     'my-routeable-engine': {
       dependencies: {
-        services: ['my-service'],
+        services: ['foo', 'my-service'],
       },
     },
     'my-routeless-engine': {
       dependencies: {
-        services: ['my-service'],
+        services: ['my-service', 'foo'],
       },
     },
   };
